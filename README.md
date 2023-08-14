@@ -9,6 +9,4 @@ The Hotel Reservation System is a simple and user-friendly application designed 
 5. User-Friendly Interface: The application offers an intuitive and user-friendly interface for customers to navigate through room options and make reservations effortlessly.
 
 **Prerequisites**
-Java JDK
-Hibernate ORM
-MySQL Database
+Java JDK, Hibernate ORM, MySQL Database
