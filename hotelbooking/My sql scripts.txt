@@ -1,0 +1,12 @@
+create database hotel;
+use hotel;
+show tables;
+INSERT INTO rooms (room_number, type, price) VALUES ('101', 'Double', 200.0);
+INSERT INTO rooms (room_number, type, price) VALUES ('102', 'Single', 100.0);
+INSERT INTO rooms (room_number, type, price) VALUES ('103', 'Suite', 250.0);
+INSERT INTO rooms (room_number, type, price) VALUES ('104', 'luxury', 300.0);
+INSERT INTO rooms (room_number, type, price) VALUES ('105', 'Duplex', 350.0);
+INSERT INTO rooms (room_number, type, price) VALUES ('106', 'Penthouse', 400.0);
+select*from rooms;
+select*from  reservation;
+select*from  customer;
