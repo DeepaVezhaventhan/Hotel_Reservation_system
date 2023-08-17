@@ -73,4 +73,12 @@ public class ReservationDAOImpl implements GenericDAO<Reservation, Long> {
             e.printStackTrace();
         }
     }
+    //added
+    public List<Reservation> getReservationsByCustomerLastName(String lastName) {
+        try (Session session = sessionFactory.openSession()) {
+            return session.createQuery("SELECT r FROM Reservation r JOIN r.customer c WHERE c.lastName = :lastName", Reservation.class)
+                    .setParameter("lastName", lastName)
+                    .getResultList();
+        }
+    }
 }
